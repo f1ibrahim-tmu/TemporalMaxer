@@ -2,8 +2,6 @@ data/
 ckpt/
 pretrained/
 exp/
-libs/utils/dist
-libs/utils/nms_1d_cpu.egg-info
 **/build
 
 
@@ -18,9 +16,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-*.egg-info/
 .installed.cfg
-*.egg
 MANIFEST
 
 cache/
