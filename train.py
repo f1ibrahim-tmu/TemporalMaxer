@@ -125,7 +125,7 @@ def main(args):
 
     """4. training / validation loop"""
     print("\nStart training model {:s} ...".format(cfg['model_name']))
-
+    start = time.time()
     # start training
     max_epochs = cfg['opt'].get(
         'early_stop_epochs',
@@ -217,7 +217,8 @@ def main(args):
 
     # wrap up
     tb_writer.close()
-    print("All done!")
+    end = time.time()
+    print("All done! Total training time: {:0.2f} sec".format(end - start))
     return
 
 
