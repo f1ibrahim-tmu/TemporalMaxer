@@ -3,8 +3,8 @@ dataset_name: thumos
 train_split: ['validation']
 val_split: ['test']
 dataset: {
-  json_file: /data/r46rahma/data/i5O/THUMOS14/annotations/thumos14.json,
-  feat_folder: /data/r46rahma/data/i5O/THUMOS14/actionformer_subset,
+  json_file: /data/fady/aar/forked_actionformer_release/data/thumos/annotations/thumos14.json,
+  feat_folder: /data/fady/aar/forked_actionformer_release/data/thumos/i3d_features,
   file_prefix: ~,
   file_ext: .npy,
   num_classes: 20,
