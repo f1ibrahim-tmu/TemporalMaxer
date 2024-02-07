@@ -3,7 +3,7 @@ dataset_name: i5O
 train_split: ['validation']
 val_split: ['test']
 dataset: {
-  json_file: ./data/thumos/annotations/i5Oannotations_i3d_rgb.json,
+  json_file: /data/fady/aar/video_features/annotations/i5Oannotations_i3d_rgb.json,
   feat_folder: ./data/i5O/i3d,
   file_prefix: ~,
   file_ext: .npy,
