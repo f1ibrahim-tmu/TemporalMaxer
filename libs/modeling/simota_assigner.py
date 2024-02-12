@@ -135,7 +135,7 @@ class SimOTAAssigner(object):
 
     def dynamic_k_matching(self, cost, num_gt, valid_mask,
                            valid_cost_matrix_inds, pairwise_ious):
-        global pos_idx
+        global pos_idx; 
         positive_pos = cost < INF
         matching_matrix = (cost < INF).float()
         pre_assign_weight = cost.new_ones((len(cost), ))
