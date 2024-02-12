@@ -4,9 +4,9 @@ train_split: ['validation']
 val_split: ['test']
 dataset: {
   json_file: ./data/thumos/annotations/i5Oannotations_i3d_concat.json,
-  feat_folder: ./data/i5O/i3d,
+  feat_folder: ./data/i5O/i3d/concat,
   file_prefix: ~,
-  file_ext: _concat.npy,
+  file_ext: .npy,
   num_classes: 20,
   input_dim: 1408,
   feat_stride: 4,

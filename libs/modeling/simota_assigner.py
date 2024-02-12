@@ -153,8 +153,8 @@ class SimOTAAssigner(object):
        
         matching_matrix[~valid_cost_matrix_inds] = 0
         
-        # del dynamic_ks, pos_idx
-        _, min_inds = cost.min(0)
+        del dynamic_ks, pos_idx
+        _, min_inds = cost.min(1)
         
         return matching_matrix, min_inds, pre_assign_weight
 
