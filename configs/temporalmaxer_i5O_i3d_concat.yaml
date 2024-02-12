@@ -6,7 +6,7 @@ dataset: {
   json_file: ./data/thumos/annotations/i5Oannotations_i3d_concat.json,
   feat_folder: ./data/i5O/i3d,
   file_prefix: ~,
-  file_ext: .npy,
+  file_ext: _concat.npy,
   num_classes: 20,
   input_dim: 1408,
   feat_stride: 4,
