@@ -150,9 +150,10 @@ class SimOTAAssigner(object):
                 cost[:, gt_idx], k=dynamic_ks[gt_idx], largest=False)
             pre_assign_weight[pos_idx] = 1.0
 
-        del dynamic_ks
+       
         matching_matrix[~valid_cost_matrix_inds] = 0
-
+        
+        del dynamic_ks, pos_idx
         _, min_inds = cost.min(1)
         
         return matching_matrix, min_inds, pre_assign_weight
