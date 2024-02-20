@@ -43,7 +43,8 @@ train_cfg: {
   init_loss_norm: 100,
   clip_grad_l2norm: 1.0,
   cls_prior_prob: 0.01,
-  center_sample: 'none',
+  center_sample: radius,
+  center_sample_radius: 1.5,
 }
 test_cfg: {
   voting_thresh: 0.7,
