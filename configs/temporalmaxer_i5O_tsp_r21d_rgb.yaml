@@ -5,13 +5,14 @@ train_split: ['validation']
 val_split: ['test']
 dataset: {
   json_file: /data/fady/aar/video_features/annotations/i5Oannotations_tsp_r21d_rgb.json,
-  feat_folder: /data/i5O/i5OData_30fps/TSP_features/r2plus1d_34-tsp_on_thumos14_features/stride_16/,
+  feat_folder: /data/i5O/i5OData_30fps/TSP_features/r2plus1d_34-tsp_on_thumos14_features/stride_1/,
   file_prefix: ~,
   file_ext: .npy,
   num_classes: 20,
   input_dim: 512,
-  feat_stride: 4,
+  feat_stride: 1,
   num_frames: 16,
+  default_fps: 15,
   # serve as data augmentation
   trunc_thresh: 0.5,
   crop_ratio: [0.9, 1.0],
@@ -36,7 +37,7 @@ opt: {
   weight_decay: 0.05,
 }
 loader: {
-  batch_size: 4,
+  batch_size: 2,
   num_workers: 2,
 }
 train_cfg: {
